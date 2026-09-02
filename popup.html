@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="popup.css">
+<title>Email Organizer</title>
+</head>
+<body>
+<div class="header">
+  <div class="logo">📧</div>
+  <div>
+    <h1>Email Extractor & Finder</h1>
+    <p>Organize by Age, Gender, Status, Country</p>
+  </div>
+</div>
+
+<div class="actions">
+  <button id="extractBtn">Extract from this page</button>
+  <label class="importBtn">Import CSV <input type="file" id="csvFile" accept=".csv" hidden></label>
+  <button id="exportBtn">Export CSV</button>
+</div>
+
+<div class="filters">
+  <input type="text" id="search" placeholder="Search email, name, country...">
+  <select id="filterGender"><option value="">All Genders</option><option>Male</option><option>Female</option><option>Other</option></select>
+  <select id="filterStatus"><option value="">All Status</option><option>Married</option><option>Unmarried</option><option>Single</option><option>Divorced</option></select>
+  <select id="filterCountry"><option value="">All Countries</option></select>
+  <select id="sortBy"><option value="name">Sort: Name</option><option value="age">Sort: Age</option><option value="email">Sort: Email</option><option value="country">Sort: Country</option><option value="gender">Sort: Gender</option><option value="marital">Sort: Marital</option></select>
+</div>
+
+<div class="table-wrap">
+<table id="contactTable">
+<thead>
+<tr><th>Name</th><th>Email</th><th>Age</th><th>Gender</th><th>Married/Unmarried</th><th>Country</th><th>Phone</th><th>City</th><th></th></tr>
+</thead>
+<tbody id="tbody"></tbody>
+</table>
+</div>
+
+<div class="add-form">
+<h3>Add / Edit Contact</h3>
+<input id="f_name" placeholder="Name">
+<input id="f_email" placeholder="Email">
+<input id="f_age" type="number" placeholder="Age">
+<select id="f_gender"><option value="">Gender</option><option>Male</option><option>Female</option><option>Other</option></select>
+<select id="f_marital"><option value="">Marital Status</option><option>Married</option><option>Unmarried</option><option>Single</option><option>Divorced</option></select>
+<input id="f_country" placeholder="Country">
+<input id="f_phone" placeholder="Phone">
+<input id="f_city" placeholder="City">
+<button id="saveContact">Save Contact</button>
+</div>
+
+<p class="footer">Made for GitHub • No auto-scraping of social platforms</p>
+<script src="popup.js"></script>
+</body>
+</html>

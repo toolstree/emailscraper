@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Email Extractor & Contact Organizer",
+  "version": "1.0.0",
+  "description": "Extract emails from current page and organize contacts by age, email, gender, marital status, country.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "128": "icon128.png"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

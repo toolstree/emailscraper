@@ -1,0 +1,17 @@
+body{width:780px;font-family:Inter,Segoe UI,sans-serif;margin:0;padding:0;background:#f7f9fc;color:#222}
+.header{display:flex;gap:12px;padding:16px;background:#fff;border-bottom:1px solid #e5e7eb;align-items:center}
+.logo{width:44px;height:44px;background:#e0f2ff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.header h1{margin:0;font-size:18px}.header p{margin:2px 0 0;color:#6b7280;font-size:12px}
+.actions{display:flex;gap:8px;padding:12px}
+.actions button,.importBtn{background:#1a73e8;color:#fff;border:0;padding:8px 14px;border-radius:20px;cursor:pointer;font-weight:600}
+.importBtn{background:#fff;color:#1a73e8;border:1px solid #1a73e8;display:inline-block}
+#exportBtn{background:#0f9d58}
+.filters{display:flex;gap:6px;padding:0 12px 12px;flex-wrap:wrap}
+.filters input,.filters select{padding:6px 8px;border:1px solid #d1d5db;border-radius:8px;font-size:12px}
+.table-wrap{max-height:320px;overflow:auto;background:#fff;margin:0 12px;border-radius:8px;border:1px solid #e5e7eb}
+table{width:100%;border-collapse:collapse;font-size:12px}th{background:#f1f5f9;position:sticky;top:0;text-align:left;padding:8px}td{padding:6px 8px;border-top:1px solid #f0f0f0}
+.add-form{padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:6px;background:#fff;margin:12px;border-radius:8px;border:1px solid #e5e7eb}
+.add-form h3{grid-column:span 2;margin:4px 0} .add-form input,.add-form select{padding:6px;border:1px solid #d1d5db;border-radius:6px}
+#saveContact{grid-column:span 2;background:#111;color:#fff;border:0;padding:8px;border-radius:8px;cursor:pointer}
+.footer{font-size:10px;color:#9ca3af;text-align:center;padding:8px}
+.del{color:red;cursor:pointer}
